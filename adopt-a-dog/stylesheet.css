@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  background-image: url("images/christopher-harris-57366-unsplash.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 120rem;
+  height: 40rem;
+  background-color: black;
+  padding: 5rem 15rem 15rem 15rem;
+  display:flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: lightgreen;
+}
+
+h2 {
+  color: steelblue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  color: steelblue;
+  font-size: 25px;
+  font-weight bold;
+}
+
+.dog-profile p {
+  font-size: 18px;
+}
+
+.blog p {
+  font-size: 20px;
+}
+
+main {
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+
+footer {
+  background-color: steelblue;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer p {
+  max-width: 35rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+header nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 25rem;
+  background-color: lightgrey;
+  margin-left: 0;
+}
+
+header nav ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+header nav li, header nav a {
+  color: steelblue;
+}
+
+header nav a {
+  font-size: 30px;
+}
+
+footer nav li, footer nav a {
+  color: white;
+}
+
+footer nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+nav li {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav li::after {
+  content: '/';
+  margin-left: 1rem;
+}
+
+header nav li::after {
+  font-size: 30px;
+}
+
+nav li:last-child::after {
+  content: ' ';
+  margin-left: 0;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.blog {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog div:nth-child(2) {
+  min-width: 25rem;
+  max-width: 60%;
+  padding-left: 2rem;
+}
+
+.blog img {
+  width: 35rem;
+}
+
+.dog-profile {
+  width: 20rem;
+  margin: 2rem 7rem 2rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+.dog-profile div:nth-child(2) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dog-profile img {
+  width: 20rem;
+  max-height: 10rem;
+  object-fit: cover;
+}
+
+input[type="button"] {
+  width: 18rem;
+  height: 2.5rem;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.dog-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.see-more-dogs {
+  background-color: lightgrey;
+  width: 15rem;
+  height: 3rem;
+  color: steelblue;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 40%;
+}
+
+.see-more-dogs a {
+  text-decoration: none;
+}
