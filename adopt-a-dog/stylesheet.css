@@ -25,10 +25,10 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
+h3, form {
   color: steelblue;
   font-size: 25px;
-  font-weight bold;
+  font-weight: bold;
 }
 
 .dog-profile p {
@@ -161,17 +161,6 @@ li a {
   object-fit: cover;
 }
 
-input[type="button"] {
-  width: 18rem;
-  height: 2.5rem;
-  background-color: #4CAF50;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
-}
-
 .dog-container {
   display: flex;
   justify-content: flex-start;
@@ -195,4 +184,31 @@ input[type="button"] {
 
 .see-more-dogs a {
   text-decoration: none;
+}
+
+.check-out-form input[type=text], .check-out-form input[type=email] {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.check-out-form input[type=radio] {
+  margin-bottom: 2rem;
+}
+
+#pickupLocation {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+input[type="button"], input[type=submit] {
+  width: 18rem;
+  height: 2.5rem;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 5rem;
 }
