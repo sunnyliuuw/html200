@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="javascript.js"></script>
     <title>ADOPTADOG</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
         </div>
         <div class="check-out">
           <img src="cart-icon.svg" alt="shopping cart icon" width=30>
+          <span id="totalCost"></span>
           <form action="#" method="post">
             <input type="button" name="checkout" value="Checkout">
           </form>
@@ -49,7 +51,7 @@
       <div class="dog-container">
         <article class="dog-profile">
           <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Murphy" width=200>
+            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Murphy" width=200 onclick="dogDetail('Murphy','Retriever mix', '$123.45');">
           </div>
           <div>
             <h3>Murphy</h3>
@@ -59,14 +61,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Murphy');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/nikolay-tchaouchev-785309-unsplash.jpg" alt="photo of Poppy" width=200>
+            <img src="images/nikolay-tchaouchev-785309-unsplash.jpg" alt="photo of Poppy" width=200 onclick="dogDetail('Poppy','Teddy mix', '$123.45');">
           </div>
           <div>
             <h3>Poppy</h3>
@@ -76,14 +76,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Poppy');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/marcus-wallis-471438-unsplash.jpg" alt="photo of Jack" width=200>
+            <img src="images/marcus-wallis-471438-unsplash.jpg" alt="photo of Jack" width=200  onclick="dogDetail('Jack','Hound', '$123.45');">
           </div>
           <div>
             <h3>Jack</h3>
@@ -93,14 +91,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jack');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/duffy-brook-350225-unsplash.jpg" alt="photo of Duffy" width=200>
+            <img src="images/duffy-brook-350225-unsplash.jpg" alt="photo of Duffy" width=200 onclick="dogDetail('Duffy','boxer mix', '$123.45');">
           </div>
           <div>
             <h3>Duffy</h3>
@@ -110,14 +106,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Duffy');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/tucker-good-589776-unsplash.jpg" alt="photo of Lucas" width=200>
+            <img src="images/tucker-good-589776-unsplash.jpg" alt="photo of Lucas" width=200 onclick="dogDetail('Lucas','Shepherd', '$123.45');">
           </div>
           <div>
             <h3>Lucas</h3>
@@ -127,14 +121,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Lucas');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/mitchell-orr-237216-unsplash.jpg" alt="photo of Jake" width=200>
+            <img src="images/mitchell-orr-237216-unsplash.jpg" alt="photo of Jake" width=200 onclick="dogDetail('Jake','Retriever', '$123.45');">
           </div>
           <div>
             <h3>Jake</h3>
@@ -144,14 +136,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jake');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Angus" width=200>
+            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Angus" width=200 onclick="dogDetail('Angus','Boxer mix', '$123.45');">
           </div>
           <div>
             <h3>Angus</h3>
@@ -161,14 +151,12 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Angus');">
           </div>
         </article>
         <article class="dog-profile">
           <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Violet" width=200>
+            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Violet" width=200 onclick="dogDetail('Violet','Retriever', '$123.45');">
           </div>
           <div>
             <h3>Violet</h3>
@@ -178,9 +166,7 @@
     reicid ut et etur sunt arum
     rendae pla endis re ea erum,
     qui doluptae</p>
-            <form action="#" method="post">
-              <input type="button" name="adopt" value="Adopt">
-            </form>
+            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Violet');">
           </div>
         </article>
       </div>
