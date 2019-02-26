@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="javascript.js"></script>
+    <script src="javascript/javascript.js"></script>
     <title>ADOPTADOG</title>
 </head>
 <body>
@@ -30,14 +30,16 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article class="blog">
-        <div>
-          <img src="images/eric-ward-610868-unsplash.jpg" alt="human hugs a dog" width=400>
-        </div>
-        <div>
-          <h2>Adopt A Dog</h2>
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,
+    <main class="index-main">
+      <section class="left-section">
+        <article class="highlight">
+          <div>
+            <img src="images/eric-ward-610868-unsplash.jpg" alt="human hugs a dog">
+          </div>
+          <div>
+            <h2>Adopt A Dog</h2>
+            <p>
+              Iduciendisite quo magnatem iuntum quid quaest ea am,
               tenderumet adis dolenem quidustrum fuga. Faceaquae estioria
               derum recuptatur, cum volore, undipsa doloreium hillupta aut
               es ut alitatuscit ommossum haritatur arum qui officae videbiti
@@ -45,132 +47,166 @@
               am aut amet ant fugiatum, utem non reptat ad magnienecto
               volorent fugia nonsedi gendand itatquos as magnimpor aut
               molor autatia ad est officimus accae et omnia cus, od qui ate
-          </p>
+            </p>
+          </div>
+        </article>
+        <div class="dog-container">
+          <article class="dog-profile">
+            <div>
+              <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Murphy" width=200 onclick="dogDetail('Murphy','Retriever mix', '$123.45');">
+            </div>
+            <div>
+              <h3>Murphy</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Murphy');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/nikolay-tchaouchev-785309-unsplash.jpg" alt="photo of Poppy" width=200 onclick="dogDetail('Poppy','Teddy mix', '$123.45');">
+            </div>
+            <div>
+              <h3>Poppy</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Poppy');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/marcus-wallis-471438-unsplash.jpg" alt="photo of Jack" width=200  onclick="dogDetail('Jack','Hound', '$123.45');">
+            </div>
+            <div>
+              <h3>Jack</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jack');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/duffy-brook-350225-unsplash.jpg" alt="photo of Duffy" width=200 onclick="dogDetail('Duffy','boxer mix', '$123.45');">
+            </div>
+            <div>
+              <h3>Duffy</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Duffy');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/tucker-good-589776-unsplash.jpg" alt="photo of Lucas" width=200 onclick="dogDetail('Lucas','Shepherd', '$123.45');">
+            </div>
+            <div>
+              <h3>Lucas</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Lucas');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/mitchell-orr-237216-unsplash.jpg" alt="photo of Jake" width=200 onclick="dogDetail('Jake','Retriever', '$123.45');">
+            </div>
+            <div>
+              <h3>Jake</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jake');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Angus" width=200 onclick="dogDetail('Angus','Boxer mix', '$123.45');">
+            </div>
+            <div>
+              <h3>Angus</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Angus');">
+            </div>
+          </article>
+          <article class="dog-profile">
+            <div>
+              <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Violet" width=200 onclick="dogDetail('Violet','Retriever', '$123.45');">
+            </div>
+            <div>
+              <h3>Violet</h3>
+              <p>Cost to Adopt: $123.45</p>
+              <p>Corrum volorit iandae
+      nimaxim cum restia volor
+      reicid ut et etur sunt arum
+      rendae pla endis re ea erum,
+      qui doluptae</p>
+              <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Violet');">
+            </div>
+          </article>
         </div>
-      </article>
-      <div class="dog-container">
-        <article class="dog-profile">
-          <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Murphy" width=200 onclick="dogDetail('Murphy','Retriever mix', '$123.45');">
-          </div>
-          <div>
-            <h3>Murphy</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Murphy');">
-          </div>
+        <p class="see-more-dogs"><a href="dogs.html">See More Dogs</a></p>
+      </section>
+      <section class="right-section">
+        <h2>From our Blog</h2>
+        <article class="blog-preview">
+          <img src="images/patrick-hendry-221863-unsplash.jpg" alt="human sits with a dog">
+          <h3>Traveling With Your Dog</h3>
+          <p>
+            Iciustiam, et ad quiaes cum que
+            excea sinciendi qui offic temquas
+            doluptios dolupta tiandebis nem ut.
+          </p>
+          <p class="read-more"><a href="blog.html">Read more>></a></p>
         </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/nikolay-tchaouchev-785309-unsplash.jpg" alt="photo of Poppy" width=200 onclick="dogDetail('Poppy','Teddy mix', '$123.45');">
-          </div>
-          <div>
-            <h3>Poppy</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Poppy');">
-          </div>
+        <article class="blog-preview">
+          <img src="images/matt-nelson-259365-unsplash.jpg" alt="human sits with a dog">
+          <h3>How To Walk Multiple Dogs</h3>
+          <p>
+            Iciustiam, et ad quiaes cum que
+            excea sinciendi qui offic temquas
+            doluptios dolupta tiandebis nem ut.
+          </p>
+          <p class="read-more"><a href="blog.html">Read more>></a></p>
         </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/marcus-wallis-471438-unsplash.jpg" alt="photo of Jack" width=200  onclick="dogDetail('Jack','Hound', '$123.45');">
-          </div>
-          <div>
-            <h3>Jack</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jack');">
-          </div>
+        <article class="blog-preview">
+          <img src="images/wyatt-ryan-367017-unsplash.jpg" alt="human sits with a dog">
+          <h3>Teach Your Dog To Fetch!</h3>
+          <p>
+            Iciustiam, et ad quiaes cum que
+            excea sinciendi qui offic temquas
+            doluptios dolupta tiandebis nem ut.
+          </p>
+          <p class="read-more"><a href="blog.html">Read more>></a></p>
         </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/duffy-brook-350225-unsplash.jpg" alt="photo of Duffy" width=200 onclick="dogDetail('Duffy','boxer mix', '$123.45');">
-          </div>
-          <div>
-            <h3>Duffy</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Duffy');">
-          </div>
-        </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/tucker-good-589776-unsplash.jpg" alt="photo of Lucas" width=200 onclick="dogDetail('Lucas','Shepherd', '$123.45');">
-          </div>
-          <div>
-            <h3>Lucas</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Lucas');">
-          </div>
-        </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/mitchell-orr-237216-unsplash.jpg" alt="photo of Jake" width=200 onclick="dogDetail('Jake','Retriever', '$123.45');">
-          </div>
-          <div>
-            <h3>Jake</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Jake');">
-          </div>
-        </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Angus" width=200 onclick="dogDetail('Angus','Boxer mix', '$123.45');">
-          </div>
-          <div>
-            <h3>Angus</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Angus');">
-          </div>
-        </article>
-        <article class="dog-profile">
-          <div>
-            <img src="images/alex-lacayo-756508-unsplash.jpg" alt="photo of Violet" width=200 onclick="dogDetail('Violet','Retriever', '$123.45');">
-          </div>
-          <div>
-            <h3>Violet</h3>
-            <p>Cost to Adopt: $123.45</p>
-            <p>Corrum volorit iandae
-    nimaxim cum restia volor
-    reicid ut et etur sunt arum
-    rendae pla endis re ea erum,
-    qui doluptae</p>
-            <input type="button" name="adopt" value="Adopt" onclick="adoptAdd(123.45, 'Violet');">
-          </div>
-        </article>
-      </div>
-      <p class="see-more-dogs"><a href="dogs.html">See More Dogs</a></p>
+      </section>
     </main>
     <footer>
       <div class="footer-container">
