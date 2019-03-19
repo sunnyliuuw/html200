@@ -235,10 +235,25 @@ li a {
 }
 
 .check-out-form input[type=text],
-.check-out-form input[type=email] {
+.check-out-form input[type=email],
+.contact-us,
+.contact-us input[type=text],
+.contact-us input[type=email] {
   font-size: 40px;
   display: block;
   margin-bottom: 2rem;
+}
+
+.contact-us button {
+  width: 70%;
+  height: 2.5rem;
+  color: white;
+  background-color: #4CAF50;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
 }
 
 .check-out-form input[type=radio] {
