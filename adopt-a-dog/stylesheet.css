@@ -290,6 +290,13 @@ input[type=submit] {
   margin-bottom: 5rem;
 }
 
+/* .dog-profile:hover {
+  border: 1px solid red;
+} */
+.dog-border {
+  border: 1px solid red;
+}
+
 @media (max-width: 768px) {
   .right-section {
     display: none;
